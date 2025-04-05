@@ -39,8 +39,8 @@ const store = {
 ### Guideline
 
 * use namespaced store
-* create a seperate store by feature wise or category wise (seperation depends upon the product, so anything is permitted) and make it namespaced. 
-* create a seperate folder for each store and keep state, action, getter , mutation inside seperat file. Import all the codes into a index.js file treating store as a module.
+* create a separate store by feature-wise or category-wise (separation depends upon the product, so anything is permitted) and make it namespaced. 
+* create a separate folder for each store and keep state, action, getter , mutation inside separate file. Import all the codes into a index.js file treating store as a module.
 * state should be created by calling a method,  which will return the initial state. So that we are not getting into issue of object reference.
 * A getter should be only created if it computes something out of state. Only returning state from getters is not allowed.
 * Action should call service, store the result in state & return the response if required.
@@ -67,7 +67,7 @@ Define variable inside data which needs reactivity otherwise initiate it in cons
 
 ## Style
 
-No limit to style codes but try to refactor it and keep it in a seperate file, then import inside component.
+No limit to style codes but try to refactor it and keep it in a separate file, then import inside component.
 
 ## Accessing store
 
@@ -75,7 +75,7 @@ Always use map methods from store like mapGetters, mapState etc.
 
 ## Event naming
 
-always use train-case for event naming & name should be something like a event.e.e.g - click, loaded, item-loaded etc
+Always use train-case for event naming & name should be something like a event.e.e.g - click, loaded, item-loaded etc
 
 ```
 <MyComponent @deleted="" @newuser-created=""> </MyComponent>
